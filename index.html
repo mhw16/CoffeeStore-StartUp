@@ -1,0 +1,71 @@
+<?php include('connect.php');?>
+<html>
+<head>
+
+<title>Account Login and Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<h1> Welcome to the Coffee Shop!</h1>
+<h2> Sign in or Create an Account!</h2>
+
+
+<body>
+<div id="nav".
+	<div class="login-page">
+	<div class="form">
+		<form class="register-form" method="post" action="connect.php">
+		<h3>Registration Form</h3>
+		<input type="text" placeholder="First_Name" name="First_Name"/>
+		<input type="text" placeholder="Last_Name" name="Last_Name"/><br>
+		<input type="text" placeholder="Street" name="Street"/>
+		<input type="text" placeholder="City" name="City"/><br>
+		<input type="text" placeholder="State" name="State"/>
+		<input type="text" placeholder="Phone_Number" name="Phone_Number"/><br>
+		<input type="text" placeholder="DOB(yyyy-mm-dd)" name="DOB(yyyy-mm-dd)"/>
+		<input type="radio" value="male" name="sex" checked="checked"> Male
+		<input type="radio" value="female" name="sex" checked="checked"> Female
+		<input type="text" placeholder="Email" name="Email"/>
+		<input type="text" placeholder="Bank_Account" name="Bank_Account"/><br>
+		<input type="text" placeholder="Username" name="Username"/>
+		<input type="password" placeholder="Password" name="Password"/>
+		<button>Create Account</button>
+		<p class="message">Already Registered? <a href="#">Login</a>
+		</p>
+		</form>
+	
+	<form class="login-form" method="post" action="login.php">
+	<h3>Login</h3>
+	<input type="text" placeholder="Username" name="userid"/>
+	<input type="password" placeholder="Password" name="pswrd"/>
+	<button>Login</button>
+	<p class="message">Not Registered? <a href="#">Register</a></p>
+	</form>
+	
+	</div>
+	</div>
+</div>
+	
+	<!--onclick="check(this.form)"-->
+	<script language="javascript">
+	function check(form){
+	if(form.userid.value == "root" && form.pswrd.value == "123"){
+		window.open('Home_Page.html')
+		}
+	else{
+		alert("The username and password you entered are incorrect.")
+		}
+	}
+	</script>
+	
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+	</script>
+	
+	<script>
+	$('.message a').click(function(){
+	$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+	</script>
+	
+</body>
+</html>
