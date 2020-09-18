@@ -10,6 +10,8 @@ Requires WampServer or another database application in order to host the SQL cod
 
 This completed portion of the project illustrates my ability to use PHP, HTML, and CSS to create the following for a website:
 Registration page, login page, main menu, admin dashboard with tabs of pages to run the business, contact page, and shopping page
+
 The tabs of the admin dashboard include the following linked to a SQL database: Insert employee record, view employee record, insert product, view products, and a logout
 Functionality with the SQL database includes adding, editing, and deleting records/products. The database is also linked to the registration page, login page, and shopping pages.
+
 This project also illustrates my ability to utilize SQL databases in conjunction with a start-up website.
